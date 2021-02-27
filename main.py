@@ -6,7 +6,16 @@ from pynamodb.models import Model
 from pynamodb.attributes import UnicodeAttribute, NumberAttribute
 
 type_dict = {
-    'fire': 0xFF7533
+    'grass': 0x10c747,
+    'electric': 0xd8e362,
+    'fire': 0xFF7533,
+    'water': 0x0af2f2,
+    'dark': 0x3b0154,
+    'fairy': 0xf77ce7,
+    'normal': 0xc7c7c7,
+    'flying': 0x66decc,
+    'bug': 0xc0f545,
+    'ice': 0xb3e7f2
 }
 
 with open('credentials.json', 'r') as cred:
