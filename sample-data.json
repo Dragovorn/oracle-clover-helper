@@ -1,0 +1,100 @@
+{
+  "name": "grasshole",
+  "dex_number": 0,
+  "game": "Clover",
+  "region": "Fochun",
+  "type": [
+    {
+      "key": "fire",
+      "display": "Fire"
+    },
+    {
+      "key": "grass",
+      "display": "Grass"
+    }
+  ],
+  "display": {
+    "name": "Grasshole",
+    "game": "Clover",
+    "region": "Fochun"
+  },
+  "evolution": [
+    {
+      "condition": "level",
+      "level": 40,
+      "next": "Evoltion"
+    },
+    {
+      "condition": "stone",
+      "stone": "Moon",
+      "next": "Eeveelution"
+    }
+  ],
+  "stats": {
+    "hp": 56,
+    "atk": 60,
+    "def": 55,
+    "spatk": 47,
+    "spdef": 50,
+    "spd": 50,
+    "total": 318,
+    "happiness": 70,
+    "catch_rate": 45,
+    "hatch_time": 5120,
+    "exp": {
+      "group": {
+        "name": "Medium Slow",
+        "num": 1059860
+      },
+      "yield": 62
+    },
+    "ev": {
+      "amount": 1,
+      "type": "atk"
+    }
+  },
+  "ability": {
+    "normal": [
+      "Overgrow"
+    ],
+    "hidden": [
+      "Cheek Pouch",
+      "Analytic"
+    ]
+  },
+  "item": [
+    "Oran Berry"
+  ],
+  "egg": [
+    "Monster",
+    "Grass"
+  ],
+  "gender": {
+    "male": 87.5,
+    "female": 12.5
+  },
+  "encounter": [
+    {
+      "name": "Vitlya Woods",
+      "where": "grass",
+      "from": 3,
+      "to": 5,
+      "chance": 20
+    },
+    {
+      "name": "Mt. Moot",
+      "where": "rock",
+      "from": 10,
+      "to": 15,
+      "chance": 10
+    },
+    {
+      "name": "Blah",
+      "where": "fish",
+      "rod": "Good",
+      "from": 20,
+      "to": 25,
+      "chance": 15
+    }
+  ]
+}

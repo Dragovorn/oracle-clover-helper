@@ -3,7 +3,7 @@ import discord
 from discord_slash import SlashCommand
 from discord_slash.utils import manage_commands
 from pynamodb.models import Model
-from pynamodb.attributes import UnicodeAttribute, NumberAttribute
+from pynamodb.attributes import UnicodeAttribute, NumberAttribute, JSONAttribute
 
 type_dict = {
     'grass': 0x10c747,
@@ -34,17 +34,11 @@ class PokemonModel(Model):
     name = UnicodeAttribute(hash_key=True)
     game = UnicodeAttribute(null=True)
     region = UnicodeAttribute(null=True)
-    first_type = UnicodeAttribute(null=True)
-    second_type = UnicodeAttribute(null=True)
-    display_name = UnicodeAttribute(null=True)
-    display_game = UnicodeAttribute(null=True)
-    display_region = UnicodeAttribute(null=True)
-    display_type = UnicodeAttribute(null=True)
-    next_evolution = UnicodeAttribute(null=True)
-    previous_evolution = UnicodeAttribute(null=True)
+    type = JSONAttribute(null=True)
+    display = JSONAttribute(null=True)
+    evolution = JSONAttribute(null=True)
+    stats = JSONAttribute(null=True)
     image_url = UnicodeAttribute(null=True)
-    next_evolution_level = NumberAttribute(null=True)
-    previous_evolution_level = NumberAttribute(null=True)
     dex_number = NumberAttribute(null=True)
 
 
